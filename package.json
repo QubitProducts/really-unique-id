@@ -2,7 +2,7 @@
   "name": "really-unique-id",
   "version": "1.0.0",
   "description": "Produces random ID's on browsers using plugins and cookies for more randomness",
-  "main": "really-random-id.js",
+  "main": "really-unique-id.js",
   "scripts": {
     "test": "make test"
   },
