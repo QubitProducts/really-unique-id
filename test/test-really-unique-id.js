@@ -16,7 +16,15 @@ describe('uniqueId', function () {
 })
 
 function generateIds (n) {
-  return map(new Array(n), function () {
+  return map(arrayOfSize(n), function () {
     return uniqueId()
   })
+}
+
+function arrayOfSize (n) {
+  var list = [];
+  for (var i = 0; i < n; i++) {
+    list.push(undefined);
+  }
+  return list;
 }
