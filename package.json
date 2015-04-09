@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/qubitdigital/really-random-id.git"
+    "url": "https://github.com/QubitProducts/really-unique-id.git"
   },
-  "author": "",
+  "author": "Rob Tod <roberttod@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/qubitdigital/really-random-id/issues"
+    "url": "https://github.com/QubitProducts/really-unique-id/issues"
   },
-  "homepage": "https://github.com/qubitdigital/really-random-id",
+  "homepage": "https://github.com/QubitProducts/really-unique-id",
   "devDependencies": {
     "amp-each": "^1.0.1",
     "amp-unique": "^1.0.1",
