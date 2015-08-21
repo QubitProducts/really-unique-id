@@ -1,5 +1,4 @@
 var hash = require('string-hash')
-var map = require('amp-map')
 
 module.exports = uniqueId
 
@@ -46,10 +45,7 @@ function hammerTime () {
  */
 function fingerPrintId () {
   var maxVal = Math.pow(2, 32) - 1
-  var plugins = map(navigator.plugins, function (p) {
-    return p.description
-  }).join('')
-  var fingerPrint = navigator.userAgent + document.cookie + plugins
+  var fingerPrint = navigator.userAgent + document.cookie
   return format(hash(fingerPrint), maxVal)
 }
 
