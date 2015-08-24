@@ -22,9 +22,9 @@ function generateIds (n) {
 }
 
 function arrayOfSize (n) {
-  var list = [];
+  var list = []
   for (var i = 0; i < n; i++) {
-    list.push(undefined);
+    list.push(undefined)
   }
-  return list;
+  return list
 }
