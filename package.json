@@ -1,6 +1,6 @@
 {
   "name": "really-unique-id",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Produces random ID's using random ints and a timestamp, encoded using base36",
   "main": "really-unique-id.js",
   "scripts": {
