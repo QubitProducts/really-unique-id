@@ -3,9 +3,9 @@ Really Unique ID
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-Generates a unique ID in the form `iiiiiiiiiii-ttttttttt-fffffff` using a __random integer__, a __timestamp__ and a __fingerprint__.
+Generates a unique ID in the form `iiiiiiiiiii-ttttttttt-iiiiiii` using a __random integer__, a __timestamp__ and another __random integer__ (shortened to 7 chars).
 
-The __fingerprint__ is an attempt to uniquely identify the user's browser using `navigator.plugins`, `navigator.userAgent` and `document.cookie`. The __timestamp__ and __random integer__ are encoded in base36 to keep the ID as small as possible.
+The __timestamp__ and __random integer__ are encoded in base36 to keep the ID as small as possible while still using native base conversion.
 
 ### Usage
 
