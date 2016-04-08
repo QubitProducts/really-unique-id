@@ -36,7 +36,7 @@ function hammerTime () {
    */
   var doomsDay = new Date()
   doomsDay.setFullYear('2239')
-  return format((new Date()).getTime() + incrementor++, doomsDay.getTime())
+  return format((new Date()).getTime() + (incrementor++ % 10000), doomsDay.getTime())
 }
 
 function format (n, maxVal) {
