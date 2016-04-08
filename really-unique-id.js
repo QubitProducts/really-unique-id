@@ -1,4 +1,7 @@
-var hash = require('string-hash')
+/**
+ * For that extra degree of randomness.
+ */
+var incrementor = 0
 
 module.exports = uniqueId
 
@@ -9,7 +12,7 @@ module.exports = uniqueId
  * @returns {Number} uniqueId
  */
 function uniqueId () {
-  return [randomInt(), hammerTime(), fingerPrintId()].join('-')
+  return [randomInt(), hammerTime(), randomInt().slice(4)].join('-')
 }
 
 /**
@@ -33,20 +36,7 @@ function hammerTime () {
    */
   var doomsDay = new Date()
   doomsDay.setFullYear('2239')
-  return format((new Date()).getTime(), doomsDay.getTime())
-}
-
-/**
- * Returns an 32 bit integer based on a finger print
- * produced by concatinating strings that are usually
- * unique to each user.
- *
- * @returns {Number} fingerPrintId
- */
-function fingerPrintId () {
-  var maxVal = Math.pow(2, 32) - 1
-  var fingerPrint = navigator.userAgent + document.cookie
-  return format(hash(fingerPrint), maxVal)
+  return format((new Date()).getTime() + incrementor++, doomsDay.getTime())
 }
 
 function format (n, maxVal) {
