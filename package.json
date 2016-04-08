@@ -31,8 +31,5 @@
     "mocha": "^2.1.0",
     "sinon": "^1.13.0",
     "standard": "^3.2.1"
-  },
-  "dependencies": {
-    "string-hash": "^1.1.0"
   }
 }

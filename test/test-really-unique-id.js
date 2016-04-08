@@ -7,7 +7,7 @@ var unique = require('amp-unique')
 describe('uniqueId', function () {
   it('should produce an id in the form xxxxxxxxxxx-xxxxxxxxx-xxxxxxx', function () {
     forEach(generateIds(200), function () {
-      expect(uniqueId()).to.match(/[a-z0-9]{11}-[a-z0-9]{9}-[a-z0-9]{7}/i)
+      expect(uniqueId()).to.match(/^[a-z0-9]{11}-[a-z0-9]{9}-[a-z0-9]{7}$/i)
     })
   })
   it('should produce ids that are different', function () {
